@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>El Tesoro de Barracuda — Rafael González</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="mini-header">
+    <a class="brand" href="index.html">RAFAEL<br>GONZÁLEZ</a>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a class="active" href="projects.html">PROJECTS</a>
+        <a href="portfolio-login.html">PORTFOLIO</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
+
+<main class="project-page">
+
+    <div class="page-label">
+        <span class="project-kicker">Film</span>
+        El Tesoro de Barracuda
+    </div>
+
+   <div class="project-video">
+    <iframe
+        width="100%"
+        height="100%"
+        src="https://www.youtube-nocookie.com/embed/yaW2ooJQ730?rel=0"
+        title="El Tesoro de Barracuda"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+</div>
+
+    <section class="project-gallery">
+
+        <figure><img src="projects_media/project-01-01.jpg" alt="El Tesoro de Barracuda — image 01"></figure>
+        <figure><img src="projects_media/project-01-02.jpg" alt="El Tesoro de Barracuda — image 02"></figure>
+        <figure><img src="projects_media/project-01-03.jpg" alt="El Tesoro de Barracuda — image 03"></figure>
+        <figure><img src="projects_media/project-01-04.jpg" alt="El Tesoro de Barracuda — image 04"></figure>
+        <figure><img src="projects_media/project-01-05.jpg" alt="El Tesoro de Barracuda — image 05"></figure>
+        <figure><img src="projects_media/project-01-06.jpg" alt="El Tesoro de Barracuda — image 06"></figure>
+        <figure><img src="projects_media/project-01-07.jpg" alt="El Tesoro de Barracuda — image 07"></figure>
+        <figure><img src="projects_media/project-01-08.jpg" alt="El Tesoro de Barracuda — image 08"></figure>
+        <figure><img src="projects_media/project-01-09.jpg" alt="El Tesoro de Barracuda — image 09"></figure>
+        <figure><img src="projects_media/project-01-10.jpg" alt="El Tesoro de Barracuda — image 10"></figure>
+        <figure><img src="projects_media/project-01-11.jpg" alt="El Tesoro de Barracuda — image 11"></figure>
+        <figure><img src="projects_media/project-01-12.jpg" alt="El Tesoro de Barracuda — image 12"></figure>
+        <figure><img src="projects_media/project-01-13.jpg" alt="El Tesoro de Barracuda — image 13"></figure>
+        <figure><img src="projects_media/project-01-14.jpg" alt="El Tesoro de Barracuda — image 14"></figure>
+        <figure><img src="projects_media/project-01-15.jpg" alt="El Tesoro de Barracuda — image 15"></figure>
+        <figure><img src="projects_media/project-01-16.jpg" alt="El Tesoro de Barracuda — image 16"></figure>
+        <figure><img src="projects_media/project-01-17.jpg" alt="El Tesoro de Barracuda — image 17"></figure>
+        <figure><img src="projects_media/project-01-18.jpg" alt="El Tesoro de Barracuda — image 18"></figure>
+        <figure><img src="projects_media/project-01-19.jpg" alt="El Tesoro de Barracuda — image 19"></figure>
+        <figure><img src="projects_media/project-01-20.jpg" alt="El Tesoro de Barracuda — image 20"></figure>
+
+    </section>
+
+    <div class="project-nav">
+        <a href="project-01.html">← PREVIOUS</a>
+        <a href="projects.html">ALL PROJECTS</a>
+        <a href="project-02.html">NEXT →</a>
+    </div>
+
+</main>
+
+<footer class="site-footer">
+    <a href="mailto:rafagonzalezrojo@gmail.com">rafagonzalezrojo@gmail.com</a>
+    <span>·</span>
+    <a href="https://rafaelgonzalez.carrd.co/" target="_blank" rel="noopener">CARRD</a>
+</footer>
+<script>
+document.querySelectorAll('.project-gallery img').forEach(img => {
+    const link = document.createElement('a');
+    link.href = img.src;
+    link.target = '_blank';
+    link.rel = 'noopener';
+
+    img.parentNode.insertBefore(link, img);
+    link.appendChild(img);
+});
+</script>
+</body>
+</html>

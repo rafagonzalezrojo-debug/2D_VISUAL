@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Portfolio</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="mini-header"><a class="brand" href="index.html">RAFAEL<br>GONZÁLEZ</a><nav><a href="index.html">HOME</a><a href="projects.html">PROJECTS</a><a class="active" href="portfolio-login.html">PORTFOLIO</a><a href="contact.html">CONTACT</a></nav></header>
+<main class="password-page"><div class="password-box"><h1>PORTFOLIO</h1><p>Private portfolio. Enter password to continue.</p>
+<form class="password-form" onsubmit="return checkPassword(event)"><input id="pass" type="password" placeholder="Password" autocomplete="off"><button>ENTER</button></form><div id="error" class="error">Incorrect password.</div></div></main>
+<footer class="site-footer">
+<a href="mailto:rafagonzalezrojo@gmail.com">rafagonzalezrojo@gmail.com</a>
+<span>·</span>
+<a href="https://rafaelgonzalez.carrd.co/" target="_blank" rel="noopener">CARRD</a>
+</footer>
+<script>
+function checkPassword(e){e.preventDefault();if(document.getElementById('pass').value==='rafa2d'){location.href='portfolio.html'}else{document.getElementById('error').style.display='block'}return false}
+</script></body></html>

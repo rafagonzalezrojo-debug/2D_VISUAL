@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>RANDOM — Rafael González</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="mini-header"><a class="brand" href="index.html">RAFAEL<br>GONZÁLEZ</a><nav>
+<a href="index.html">HOME</a><a class="active" href="projects.html">PROJECTS</a><a href="portfolio-login.html">PORTFOLIO</a><a href="contact.html">CONTACT</a></nav></header>
+<main class="project-page"><div class="page-label"><span class="project-kicker">Project</span>RANDOM</div>
+<div class="project-video">
+    <iframe
+        src="https://www.youtube.com/embed/qoS8afAUp4k?rel=0"
+        title="RANDOM"
+        style="width:100%; height:100%; display:block; border:0;"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+</div>
+<section class="project-gallery"><figure><img src="projects_media/project-04-01.jpg" alt="Project 04 image 01"></figure>
+<figure><img src="projects_media/project-04-02.jpg" alt="Project 04 image 02"></figure>
+<figure><img src="projects_media/project-04-03.jpg" alt="Project 04 image 03"></figure>
+<figure><img src="projects_media/project-04-04.jpg" alt="Project 04 image 04"></figure>
+<figure><img src="projects_media/project-04-05.jpg" alt="Project 04 image 05"></figure>
+<figure><img src="projects_media/project-04-06.jpg" alt="Project 04 image 06"></figure>
+<figure><img src="projects_media/project-04-07.jpg" alt="Project 04 image 07"></figure>
+<figure><img src="projects_media/project-04-08.jpg" alt="Project 04 image 08"></figure>
+<figure><img src="projects_media/project-04-10.jpg" alt="Project 04 image 10"></figure>
+<figure><img src="projects_media/project-04-11.jpg" alt="Project 04 image 11"></figure>
+<figure><img src="projects_media/project-04-12.jpg" alt="Project 04 image 12"></figure>
+<figure><img src="projects_media/project-04-13.jpg" alt="Project 04 image 13"></figure>
+<figure><img src="projects_media/project-04-14.jpg" alt="Project 04 image 14"></figure>
+<figure><img src="projects_media/project-04-15.jpg" alt="Project 04 image 15"></figure>
+<figure><img src="projects_media/project-04-16.jpg" alt="Project 04 image 16"></figure>
+<figure><img src="projects_media/project-04-17.jpg" alt="Project 04 image 17"></figure>
+<figure><img src="projects_media/project-04-18.jpg" alt="Project 04 image 18"></figure>
+<figure><img src="projects_media/project-04-19.jpg" alt="Project 04 image 19"></figure>
+<figure><img src="projects_media/project-04-20.jpg" alt="Project 04 image 20"></figure></section>
+<div class="project-nav"><a href="project-03.html">← PREVIOUS</a><a href="projects.html">ALL PROJECTS</a><a href="project-04.html">NEXT →</a></div>
+</main><footer class="site-footer">
+<a href="mailto:rafagonzalezrojo@gmail.com">rafagonzalezrojo@gmail.com</a>
+<span>·</span>
+<a href="https://rafaelgonzalez.carrd.co/" target="_blank" rel="noopener">CARRD</a>
+</footer><script>
+document.querySelectorAll('.project-gallery img').forEach(img => {
+    const link = document.createElement('a');
+    link.href = img.src;
+    link.target = '_blank';
+    link.rel = 'noopener';
+
+    img.parentNode.insertBefore(link, img);
+    link.appendChild(img);
+});
+</script></body></html>

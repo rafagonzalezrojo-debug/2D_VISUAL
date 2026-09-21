@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Rafael González — 2D Visual Development</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<main>
+<a href="projects.html" class="hero-link"><section class="hero">
+<div class="slides">
+<div class="slide active"><img src="images/hero-01.jpg"></div>
+<div class="slide"><img src="images/hero-02.jpg"></div>
+<div class="slide"><img src="images/hero-03.jpg"></div>
+<div class="slide"><img src="images/hero-04.jpg"></div>
+</div>
+<div class="hero-title" style="display:none;"><div><span class="first-name">RAFAEL</span><span class="last-name">GONZÁLEZ</span></div><span class="hero-subtitle">VISUAL DEVELOPMENT &amp; ART DIRECTION</span></div>
+<div class="dots"><i class="active"></i><i></i><i></i><i></i></div>
+</section></a>
+<nav class="buttons">
+<a href="projects.html">PROJECTS</a>
+<a href="portfolio-login.html">PORTFOLIO</a>
+<a href="contact.html">CONTACT</a>
+</nav>
+<footer class="site-footer">
+<a href="mailto:rafagonzalezrojo@gmail.com">rafagonzalezrojo@gmail.com</a>
+<span>·</span>
+<a href="https://rafaelgonzalez.carrd.co/" target="_blank" rel="noopener">CARRD</a>
+</footer>
+</main>
+<script>
+const s=[...document.querySelectorAll('.slide')],d=[...document.querySelectorAll('.dots i')];let c=0;
+setInterval(()=>{s[c].classList.remove('active');d[c].classList.remove('active');c=(c+1)%s.length;s[c].classList.add('active');d[c].classList.add('active')},4500);
+</script></body></html>

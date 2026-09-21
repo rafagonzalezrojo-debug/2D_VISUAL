@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>FUNNY BONES — Rafael González</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="mini-header"><a class="brand" href="index.html">RAFAEL<br>GONZÁLEZ</a><nav>
+<a href="index.html">HOME</a><a class="active" href="projects.html">PROJECTS</a><a href="portfolio-login.html">PORTFOLIO</a><a href="contact.html">CONTACT</a></nav></header>
+<main class="project-page"><div class="page-label"><span class="project-kicker">Videogame</span>FUNNY BONES</div>
+<div style="text-align:center; margin:40px 0;">
+    <a
+        href="https://redm0nkeystudio.itch.io/funny-bones"
+        target="_blank"
+        rel="noopener"
+        style="display:inline-block; padding:10px 20px; border-radius:999px; background:#e8483e; color:#fff; text-decoration:none; font-family:Arial,sans-serif; font-size:12px; letter-spacing:.08em;">
+        PLAY FUNNY BONES →
+    </a>
+</div>
+<section class="project-gallery"><figure><img src="projects_media/project-03-01.jpg" alt="Project 03 image 01"></figure>
+<figure><img src="projects_media/project-03-02.jpg" alt="Project 03 image 02"></figure>
+<figure><img src="projects_media/project-03-03.jpg" alt="Project 03 image 03"></figure>
+<figure><img src="projects_media/project-03-04.jpg" alt="Project 03 image 04"></figure>
+</section>
+<div class="project-nav"><a href="project-02.html">← PREVIOUS</a><a href="projects.html">ALL PROJECTS</a><a href="project-04.html">NEXT →</a></div>
+</main><footer class="site-footer">
+<a href="mailto:rafagonzalezrojo@gmail.com">rafagonzalezrojo@gmail.com</a>
+<span>·</span>
+<a href="https://rafaelgonzalez.carrd.co/" target="_blank" rel="noopener">CARRD</a>
+</footer><script>
+document.querySelectorAll('.project-gallery img').forEach(img => {
+    const link = document.createElement('a');
+    link.href = img.src;
+    link.target = '_blank';
+    link.rel = 'noopener';
+
+    img.parentNode.insertBefore(link, img);
+    link.appendChild(img);
+});
+</script></body></html>
